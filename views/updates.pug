@@ -1,0 +1,24 @@
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        h1 Add a New Contact
+        a(href='/') Return to the homepage
+        form(method='POST' action='/update-cobj')
+            label First Name
+            input(type='text' name='firstname')
+            br
+            label Last Name
+            input(type='text' name='lastname')
+            br
+            label Nickname
+            input(type='text' name='nickname')
+            br
+            label Bio
+            input(type='text' name='bio')
+            br
+            label Favorite Color
+            input(type='text' name='favorite_color')
+            br
+            button(type='submit') Submit
