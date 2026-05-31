@@ -1,0 +1,23 @@
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        h1 My Contacts
+        a(href='/update-cobj') Add to this table
+        table
+            thead
+                tr
+                    th First Name
+                    th Last Name
+                    th Nickname
+                    th Bio
+                    th Favorite Color
+            tbody
+                each contact in data
+                    tr
+                        td #{contact.properties.firstname}
+                        td #{contact.properties.lastname}
+                        td #{contact.properties.nickname}
+                        td #{contact.properties.bio}
+                        td #{contact.properties.favorite_color}
